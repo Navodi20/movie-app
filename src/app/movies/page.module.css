@@ -1,0 +1,42 @@
+
+.container {
+  font-family: 'Times New Roman', Times, serif;
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+
+.title {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 40px;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse; 
+  margin: 20px auto;
+  background-color: white;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ddd; 
+}
+.th, .td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd; 
+}
+
+.th {
+  background-color: grey;
+  color: black;
+  border: 3px solid #ddd;
+  text-align: center; 
+}
+
+.td {
+  border: 1px solid #ddd; 
+  text-align: center;
+}
+
+.tr:hover {
+  background-color: #f1f1f1;
+}
