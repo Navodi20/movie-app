@@ -9,7 +9,9 @@ const MoviesPage = async () => {
 
   return (
     <div className={styles.container}>
-      <h1 className={styles.title}>Search Movies</h1>
+      <h1 className={styles.title}>Movie Collection</h1>
+      <a href="/movie/search" className="button">Search Movies</a>
+      <center><a href="/" className={styles.homeLink}>Back to Home</a></center>
       <table className={styles.table}>
         <thead>
           <tr>
