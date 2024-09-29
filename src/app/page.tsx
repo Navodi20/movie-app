@@ -24,8 +24,8 @@ const HomePage = () => {
 
   return (
     <div className="container">
-      <h1 className="title">Welcome to Movie Explorer</h1>
-      <p className="description">Search for your favorite movies and get detailed information!</p>
+      <h1 className="title">Welcome to the World of Movies</h1>
+      <p className="description">Explore an extensive collection of movies and discover all the details you need to make informed viewing choices. Whether you're looking for classic films, the latest blockbusters, or hidden gems, our movie explorer provides comprehensive information on your favorite titles. Dive deep into movie plots, find out who's starring, check ratings, and explore genres. Our platform makes it easy to search for the perfect movie, whether you're in the mood for a drama, comedy, thriller, or something new. Get started now and unlock a world of cinematic knowledge at your fingertips</p>
       <a href="/movie/search" className="button">Discover Movies</a>
       <a href="/movies" className="button">Movie Collection</a>
       <div className="imageContainer">

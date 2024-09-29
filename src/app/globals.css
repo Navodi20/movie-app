@@ -1,19 +1,21 @@
-/* app/home/Home.module.css */
+
 .container {
   text-align: center;
   padding: 20px;
   background-color: #f4f4f4;
-  height: 100vh; /* Full viewport height */
+  height: 100vh; 
 }
 
 .title {
   font-size: 48px;
   margin-bottom: 20px;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 .description {
   font-size: 18px;
   margin-bottom: 40px;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 .button {
@@ -32,12 +34,16 @@
 
 .imageContainer {
   display: flex;
-  flex-wrap: wrap; /* Allows images to wrap if there are too many */
-  justify-content: center; /* Center images horizontally */
+  flex-wrap: wrap; 
+  justify-content: center; 
   margin-top: 20px;
 }
 .image {
-  width: 150px; /* Set fixed width for images */
-  height: auto; /* Maintain aspect ratio */
-  margin: 10px; /* Space between images */
+  width: 150px; 
+  height: auto; 
+  margin: 10px;
+}
+
+.imageContainer img:hover {
+  transform: scale(1.05);
 }
