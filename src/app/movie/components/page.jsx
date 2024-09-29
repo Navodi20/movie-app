@@ -1,10 +1,15 @@
-
-import React from 'react';
+import React, { useState } from 'react'; 
 import styles from './page.module.css'; 
 
 const SearchBar = ({ setSearchTerm }) => {
+  const [inputValue, setInputValue] = useState(''); 
+
   const handleChange = (event) => {
-    setSearchTerm(event.target.value);
+    setInputValue(event.target.value); 
+  };
+
+  const handleSearch = () => {
+    setSearchTerm(inputValue); 
   };
 
   return (
@@ -13,9 +18,10 @@ const SearchBar = ({ setSearchTerm }) => {
         type="text"
         className={styles.input} 
         placeholder="Explore Movies by Title"
+        value={inputValue} 
         onChange={handleChange}
       />
-      <button className={styles.button} onClick={() => setSearchTerm}>Search</button>
+      <button className={styles.button} onClick={handleSearch}>Search</button>
     </div>
   );
 };
