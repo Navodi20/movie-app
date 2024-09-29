@@ -1,6 +1,6 @@
-// app/movie/components/SearchBar.tsx
+
 import React from 'react';
-import styles from './page.module.css'; // Import the CSS module
+import styles from './page.module.css'; 
 
 const SearchBar = ({ setSearchTerm }) => {
   const handleChange = (event) => {
@@ -12,7 +12,7 @@ const SearchBar = ({ setSearchTerm }) => {
       <input
         type="text"
         className={styles.input} 
-        placeholder="Discover Movies"
+        placeholder="Explore Movies by Title"
         onChange={handleChange}
       />
       <button className={styles.button} onClick={() => setSearchTerm}>Search</button>
