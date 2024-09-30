@@ -56,12 +56,12 @@
   display: flex;
   flex-wrap: wrap; 
   justify-content: center; 
-  margin-top: 20px;
+  margin-top: 50px;
 }
 .image {
-  width: 150px; 
+  width: 250px; 
   height: auto; 
-  margin: 10px;
+  margin: 20px;
 }
 
 .imageContainer img:hover {

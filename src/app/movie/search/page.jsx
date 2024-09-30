@@ -45,22 +45,11 @@ const MoviesTable = ({ data }) => (
   </table>
 );
 const imageUrls = [
-  '/images/image 2 (1).jpg', 
-  '/images/image 2 (2).jpg',
-  '/images/image 2 (3).jpg',
-  '/images/image 2 (4).jpg',
-  '/images/image 2 (5).jpg',
-  '/images/image 2 (6).jpg',
-  '/images/image 2 (7).jpg',
-  '/images/image 2 (8).jpg',
-  '/images/image 2 (9).jpg',
-  '/images/image 2 (10).jpg',
-  '/images/image 2 (11).jpg',
-  '/images/image 2 (12).jpg',
-  '/images/image 2 (13).jpg',
-  '/images/image 2 (14).jpg',
+  '/images/image 2 (16).jpg',
+  '/images/image 2 (18).jpg',
   '/images/image 2 (15).jpg',
-  '/images/image 2 (16).jpg'
+  '/images/image 2 (17).jpg',
+  '/images/image 2 (9).jpg'
 ];
 const SearchPage = () => {
   const [searchTerm, setSearchTerm] = useState('');
@@ -77,11 +66,12 @@ const SearchPage = () => {
       <center><a href="/" className={styles.homeLink}>Back to Home</a></center>
 
       {data && <MoviesTable data={data} />}
-      <div className="imageContainer">
+      <div className={styles.imageContainer}>
       {imageUrls.map((src, index) => (
-          <img key={index} src={src} className="image" />
-        ))}
-      </div>
+        <img key={index} src={src} className={styles.image} />
+      ))}
+    </div>
+
     </div>
     
     
