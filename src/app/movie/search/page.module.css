@@ -52,5 +52,19 @@
   color: grey;
   
 }
+.imageContainer {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: center; 
+  margin-top: 20px;
+}
+.image {
+  width: 150px; 
+  height: auto; 
+  margin: 10px;
+}
 
+.imageContainer img:hover {
+  transform: scale(1.05);
+}
 
